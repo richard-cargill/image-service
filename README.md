@@ -1,7 +1,12 @@
-# micro-base
-Zeit Micro base project
+# image-service
+Microservice for resizing images - zeit micro, sharp
 
-- `$ yarn dev` - for dev [micro-dev](https://github.com/zeit/micro-dev)
-- `$ yarn build` - build docker image - [dockerpkg](https://github.com/dockerpkg/dockerpkg)
-- `$ yarn run` - run docker image
-- `$ yarn test` - xo for linting and jest for testing
+
+## Query params
+- u = absolute url
+- w = width- 
+
+
+# Roadmap
+- add changing file type
+- add detect filetype header
