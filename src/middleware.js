@@ -5,7 +5,7 @@ const rateLimit = require('micro-ratelimit');
 
 const middleware = compose(
   cors({
-    allowMethods: ['POST', 'GET', 'PUT', 'DELETE', 'OPTIONS'],
+    allowMethods: ['GET'],
     allowHeaders: [],
     origin: '*'
   }),

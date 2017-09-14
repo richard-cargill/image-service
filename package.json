@@ -1,14 +1,14 @@
 {
-  "name": "micro-base",
-  "version": "1.0.0",
-  "description": "",
+  "name": "image-service",
+  "version": "1.0.1",
+  "description": "Microservice for resizing images - zeit micro, sharp",
   "main": "./src/server.js",
   "scripts": {
     "start": "micro -p ${PORT:-3000}",
     "dev": "micro-dev",
     "prebuild": "dockerpkg",
-    "build": "docker build -t dockerpkg/micro-base:latest .",
-    "run": "docker run -p 3000:3000 -it --name micro-base --rm dockerpkg/micro-base:latest",
+    "build": "docker build -t dockerpkg/image-service:latest .",
+    "run": "docker run -p 3000:3000 -it --name image-service --rm dockerpkg/image-service:latest",
     "test": "xo --space && jest --coverage --forceExit"
   },
   "bin": "./src/index.js",
@@ -20,8 +20,11 @@
     "micro-compose": "^0.0.3",
     "micro-compress": "^1.0.0",
     "micro-cors": "^0.0.4",
+    "micro-query": "^0.2.0",
     "micro-ratelimit": "^0.2.0",
-    "rambda": "^0.9.0"
+    "node-fetch": "^1.7.3",
+    "rambda": "^0.9.0",
+    "sharp": "^0.18.3"
   },
   "devDependencies": {
     "dockerpkg": "^1.0.0",
